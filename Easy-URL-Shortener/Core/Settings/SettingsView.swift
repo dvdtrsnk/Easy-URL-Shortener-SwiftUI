@@ -74,6 +74,7 @@ extension SettingsView {
                     .foregroundStyle(.foregroundPrimary)
             } icon: {
                 Image(systemName: "network")
+                    .foregroundStyle(vm.appColorSetter)
             }
         }
     }

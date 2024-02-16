@@ -29,7 +29,6 @@ final class SettingsViewModel: UserDefaultsSubscriber {
         }
         set {
             withMutation(keyPath: \.appColorSetter) {
-                print(newValue.toRgbaString())
                 UserDefaults.standard.appColorTheme = newValue.toRgbaString()
             }
         }

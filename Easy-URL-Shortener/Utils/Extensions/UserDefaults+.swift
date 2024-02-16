@@ -11,7 +11,7 @@ import SwiftUI
 extension UserDefaults {
     @objc dynamic var appColorTheme: String {
         get {
-            return string(forKey: "appColorTheme") ?? ""
+            return string(forKey: "appColorTheme") ?? "#2F52C6EC"
         }
         set {
             set(newValue, forKey: "appColorTheme")
